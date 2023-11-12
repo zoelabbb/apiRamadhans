@@ -1,4 +1,5 @@
 // app.ts
+import { deploy } from "https://deno.com/deploy/deploy.ts";
 import { Application } from "../deps.ts";
 import router from "./routes/ramadhanRoute.ts";
 
@@ -10,3 +11,4 @@ app.use(router.allowedMethods());
 console.log("Server now running on http://localhost:8000");
 
 // await app.listen({ port: 8000 });
+addEventListener("fetch", deploy(app));
