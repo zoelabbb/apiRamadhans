@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": {
+      "cmd": "deno run --unstable --allow-net src/app.ts",
+      "desc": "Run the Deno server",
+      "watch": true,
+      "ext": "ts json"
+    }
+  },
+  "watch": {
+    "exts": ["ts", "js"],
+    "match": ["**/*.*"],
+    "skip": ["*.test.ts"],
+    "debounce": 2000,
+    "quiet": false,
+    "run": ["start"]
+  }
+}
