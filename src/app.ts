@@ -9,4 +9,4 @@ app.use(router.allowedMethods());
 
 console.log("Server now running on http://localhost:8000");
 
-await app.listen({ port: 8000 });
+// await app.listen({ port: 8000 });
